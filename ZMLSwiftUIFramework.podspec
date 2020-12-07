@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ZMLSwiftUIFramework"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "a frame use zml to give view."
   spec.description  = <<-DESC
                     a frame use zml to give view.
@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
  spec.source       = { :git => "https://github.com/karankarthic/ZMLSwiftUIFramework.git" }  
  spec.source_files = "ZMLSwiftUIFramework","ZMLSwiftUIFramework/**/*.{swift}"
  spec.dependency 'ZMLKit', '0.0.23'
- spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+ 
   spec.swift_version = "5.0"
 end
