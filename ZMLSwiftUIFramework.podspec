@@ -10,8 +10,6 @@ Pod::Spec.new do |spec|
   spec.author       = { "karankarthic" => "karankarthic1@gmail.com" }
   spec.platform     = :ios, "13.0"
  spec.source       = { :git => "https://github.com/karankarthic/ZMLSwiftUIFramework.git" }  
- spec.source_files = "ZMLSwiftUIFramework","ZMLSwiftUIFramework/**/*.{swift}"
- spec.dependency 'ZMLKit', '0.0.23'
- 
+ spec.source_files = "ZMLSwiftUIFramework","ZMLSwiftUIFramework/**/*.{swift}" 
   spec.swift_version = "5.0"
 end
