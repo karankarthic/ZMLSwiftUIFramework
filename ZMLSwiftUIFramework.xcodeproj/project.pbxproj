@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133B724B257F548E0050DA6D /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		133B724B257F548E0050DA6D /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		133B7251257F7F140050DA6D /* PanelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B7250257F7F140050DA6D /* PanelContentView.swift */; };
 		13D81EBF257A4384004EFA3E /* ZMLSwiftUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D81EB5257A4384004EFA3E /* ZMLSwiftUIFramework.framework */; };
 		13D81EC4257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D81EC3257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.swift */; };
 		13D81EC6257A4384004EFA3E /* ZMLSwiftUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				133B724B257F548E0050DA6D /* BuildFile in Embed Frameworks */,
+				133B724B257F548E0050DA6D /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		133B7250257F7F140050DA6D /* PanelContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelContentView.swift; sourceTree = "<group>"; };
 		13D81EB5257A4384004EFA3E /* ZMLSwiftUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZMLSwiftUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMLSwiftUIFramework.h; sourceTree = "<group>"; };
 		13D81EB9257A4384004EFA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */,
+				133B7250257F7F140050DA6D /* PanelContentView.swift */,
 				13D81EB9257A4384004EFA3E /* Info.plist */,
 			);
 			path = ZMLSwiftUIFramework;
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133B7251257F7F140050DA6D /* PanelContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +420,7 @@
 		13D81ECD257A4384004EFA3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5N6T4GFYK;
 				INFOPLIST_FILE = ZMLSwiftUIFrameworkTests/Info.plist;
@@ -434,6 +439,7 @@
 		13D81ECE257A4384004EFA3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5N6T4GFYK;
 				INFOPLIST_FILE = ZMLSwiftUIFrameworkTests/Info.plist;
