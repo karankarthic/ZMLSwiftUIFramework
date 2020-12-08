@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ZMLSwiftUIFramework"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.2"
   spec.summary      = "a frame use zml to give view."
   spec.description  = <<-DESC
                     a frame use zml to give view.
