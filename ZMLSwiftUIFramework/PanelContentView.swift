@@ -8,17 +8,17 @@
 
 import SwiftUI
 
-struct PanelContentView: View {
-    var body: some View {
+public struct PanelContentView: View {
+    public var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct Card : View {
+public struct Card : View {
     
     let prompt: String
     let id: UUID?
-    var body: some View {
+    public var body: some View {
         ZStack(alignment: .top) {
             RoundedRectangle(cornerRadius: 5, style: .circular)
                 .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -41,10 +41,10 @@ struct Card : View {
     }
     
 }
-struct CardView: View {
+public struct CardView: View {
     let cards: [Card]
     
-    var body: some View {
+    public var body: some View {
         VStack(spacing:10) {
             
             ForEach(0 ..< cards.count) {

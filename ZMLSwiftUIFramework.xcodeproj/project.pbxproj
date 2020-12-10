@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		133B724B257F548E0050DA6D /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		133B7251257F7F140050DA6D /* PanelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B7250257F7F140050DA6D /* PanelContentView.swift */; };
+		13D65C1E25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65C1D25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework */; };
+		13D65C1F25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65C1D25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13D81EC6257A4384004EFA3E /* ZMLSwiftUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -20,6 +22,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				133B724B257F548E0050DA6D /* (null) in Embed Frameworks */,
+				13D65C1F25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,14 +31,14 @@
 
 /* Begin PBXFileReference section */
 		133B7250257F7F140050DA6D /* PanelContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelContentView.swift; sourceTree = "<group>"; };
+		13D65C1D25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZMLSwiftUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D81EB5257A4384004EFA3E /* ZMLSwiftUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZMLSwiftUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMLSwiftUIFramework.h; sourceTree = "<group>"; };
 		13D81EB9257A4384004EFA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13D81EC3257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZMLSwiftUIFrameworkTests.swift; sourceTree = "<group>"; };
 		13D81EC5257A4384004EFA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A06ACEC5F3D1B829ABC31C3C /* Pods-ZMLSwiftUIFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMLSwiftUIFramework.release.xcconfig"; path = "Target Support Files/Pods-ZMLSwiftUIFramework/Pods-ZMLSwiftUIFramework.release.xcconfig"; sourceTree = "<group>"; };
-		DE5AC63D893A4F3D69B2F1B3 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMLSwiftUIFramework.debug.xcconfig"; path = "Target Support Files/Pods-ZMLSwiftUIFramework/Pods-ZMLSwiftUIFramework.debug.xcconfig"; sourceTree = "<group>"; };
-		F702DD8D81F4D3EC6A996438 /* Pods_ZMLSwiftUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMLSwiftUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		577C78076707C52A2C7CEA5D /* Pods-ZMLSwiftUIFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMLSwiftUIFramework.release.xcconfig"; path = "Target Support Files/Pods-ZMLSwiftUIFramework/Pods-ZMLSwiftUIFramework.release.xcconfig"; sourceTree = "<group>"; };
+		8F94B52A6F32F5C48A0E4315 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMLSwiftUIFramework.debug.xcconfig"; path = "Target Support Files/Pods-ZMLSwiftUIFramework/Pods-ZMLSwiftUIFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +46,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D65C1E25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0586F76A73906474588B559F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13D65C1D25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		089019A56041CE35D3DD0D66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DE5AC63D893A4F3D69B2F1B3 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */,
-				A06ACEC5F3D1B829ABC31C3C /* Pods-ZMLSwiftUIFramework.release.xcconfig */,
+				8F94B52A6F32F5C48A0E4315 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */,
+				577C78076707C52A2C7CEA5D /* Pods-ZMLSwiftUIFramework.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -65,7 +77,7 @@
 				13D81EC2257A4384004EFA3E /* ZMLSwiftUIFrameworkTests */,
 				13D81EB6257A4384004EFA3E /* Products */,
 				089019A56041CE35D3DD0D66 /* Pods */,
-				67BF0C60A86A75E4AAC72E78 /* Frameworks */,
+				0586F76A73906474588B559F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,14 +108,6 @@
 			path = ZMLSwiftUIFrameworkTests;
 			sourceTree = "<group>";
 		};
-		67BF0C60A86A75E4AAC72E78 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F702DD8D81F4D3EC6A996438 /* Pods_ZMLSwiftUIFramework.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -122,7 +126,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13D81EC9257A4384004EFA3E /* Build configuration list for PBXNativeTarget "ZMLSwiftUIFramework" */;
 			buildPhases = (
-				370D61BC708E329F8CC7CF7F /* [CP] Check Pods Manifest.lock */,
+				7E1DBF33CD6C02D114F7EC30 /* [CP] Check Pods Manifest.lock */,
 				13D81EB0257A4384004EFA3E /* Headers */,
 				13D81EB1257A4384004EFA3E /* Sources */,
 				13D81EB2257A4384004EFA3E /* Frameworks */,
@@ -204,7 +208,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
-		370D61BC708E329F8CC7CF7F /* [CP] Check Pods Manifest.lock */ = {
+		7E1DBF33CD6C02D114F7EC30 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,7 +366,7 @@
 		};
 		13D81ECA257A4384004EFA3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE5AC63D893A4F3D69B2F1B3 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */;
+			baseConfigurationReference = 8F94B52A6F32F5C48A0E4315 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,7 +393,7 @@
 		};
 		13D81ECB257A4384004EFA3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A06ACEC5F3D1B829ABC31C3C /* Pods-ZMLSwiftUIFramework.release.xcconfig */;
+			baseConfigurationReference = 577C78076707C52A2C7CEA5D /* Pods-ZMLSwiftUIFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
