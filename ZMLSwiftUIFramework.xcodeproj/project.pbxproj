@@ -7,22 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133B724B257F548E0050DA6D /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		133B724B257F548E0050DA6D /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		133B7251257F7F140050DA6D /* PanelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B7250257F7F140050DA6D /* PanelContentView.swift */; };
-		13D81EBF257A4384004EFA3E /* ZMLSwiftUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D81EB5257A4384004EFA3E /* ZMLSwiftUIFramework.framework */; };
-		13D81EC4257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D81EC3257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.swift */; };
 		13D81EC6257A4384004EFA3E /* ZMLSwiftUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C6039F0F596285EECBC4F2B /* Pods_ZMLSwiftUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F702DD8D81F4D3EC6A996438 /* Pods_ZMLSwiftUIFramework.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		13D81EC0257A4384004EFA3E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13D81EAC257A4384004EFA3E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13D81EB4257A4384004EFA3E;
-			remoteInfo = ZMLSwiftUIFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		133B724C257F548E0050DA6D /* Embed Frameworks */ = {
@@ -31,7 +20,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				133B724B257F548E0050DA6D /* (null) in Embed Frameworks */,
+				133B724B257F548E0050DA6D /* BuildFile in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,9 +32,11 @@
 		13D81EB5257A4384004EFA3E /* ZMLSwiftUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZMLSwiftUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMLSwiftUIFramework.h; sourceTree = "<group>"; };
 		13D81EB9257A4384004EFA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13D81EBE257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMLSwiftUIFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D81EC3257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZMLSwiftUIFrameworkTests.swift; sourceTree = "<group>"; };
 		13D81EC5257A4384004EFA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06ACEC5F3D1B829ABC31C3C /* Pods-ZMLSwiftUIFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMLSwiftUIFramework.release.xcconfig"; path = "Target Support Files/Pods-ZMLSwiftUIFramework/Pods-ZMLSwiftUIFramework.release.xcconfig"; sourceTree = "<group>"; };
+		DE5AC63D893A4F3D69B2F1B3 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMLSwiftUIFramework.debug.xcconfig"; path = "Target Support Files/Pods-ZMLSwiftUIFramework/Pods-ZMLSwiftUIFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		F702DD8D81F4D3EC6A996438 /* Pods_ZMLSwiftUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMLSwiftUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13D81EBB257A4384004EFA3E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				13D81EBF257A4384004EFA3E /* ZMLSwiftUIFramework.framework in Frameworks */,
+				7C6039F0F596285EECBC4F2B /* Pods_ZMLSwiftUIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +54,8 @@
 		089019A56041CE35D3DD0D66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				DE5AC63D893A4F3D69B2F1B3 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */,
+				A06ACEC5F3D1B829ABC31C3C /* Pods-ZMLSwiftUIFramework.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -81,6 +67,7 @@
 				13D81EC2257A4384004EFA3E /* ZMLSwiftUIFrameworkTests */,
 				13D81EB6257A4384004EFA3E /* Products */,
 				089019A56041CE35D3DD0D66 /* Pods */,
+				67BF0C60A86A75E4AAC72E78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				13D81EB5257A4384004EFA3E /* ZMLSwiftUIFramework.framework */,
-				13D81EBE257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +98,14 @@
 			path = ZMLSwiftUIFrameworkTests;
 			sourceTree = "<group>";
 		};
+		67BF0C60A86A75E4AAC72E78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F702DD8D81F4D3EC6A996438 /* Pods_ZMLSwiftUIFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -130,6 +124,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13D81EC9257A4384004EFA3E /* Build configuration list for PBXNativeTarget "ZMLSwiftUIFramework" */;
 			buildPhases = (
+				370D61BC708E329F8CC7CF7F /* [CP] Check Pods Manifest.lock */,
 				13D81EB0257A4384004EFA3E /* Headers */,
 				13D81EB1257A4384004EFA3E /* Sources */,
 				13D81EB2257A4384004EFA3E /* Frameworks */,
@@ -145,24 +140,6 @@
 			productReference = 13D81EB5257A4384004EFA3E /* ZMLSwiftUIFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		13D81EBD257A4384004EFA3E /* ZMLSwiftUIFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 13D81ECC257A4384004EFA3E /* Build configuration list for PBXNativeTarget "ZMLSwiftUIFrameworkTests" */;
-			buildPhases = (
-				13D81EBA257A4384004EFA3E /* Sources */,
-				13D81EBB257A4384004EFA3E /* Frameworks */,
-				13D81EBC257A4384004EFA3E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				13D81EC1257A4384004EFA3E /* PBXTargetDependency */,
-			);
-			name = ZMLSwiftUIFrameworkTests;
-			productName = ZMLSwiftUIFrameworkTests;
-			productReference = 13D81EBE257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,9 +153,6 @@
 					13D81EB4257A4384004EFA3E = {
 						CreatedOnToolsVersion = 11.7;
 						LastSwiftMigration = 1170;
-					};
-					13D81EBD257A4384004EFA3E = {
-						CreatedOnToolsVersion = 11.7;
 					};
 				};
 			};
@@ -196,7 +170,6 @@
 			projectRoot = "";
 			targets = (
 				13D81EB4257A4384004EFA3E /* ZMLSwiftUIFramework */,
-				13D81EBD257A4384004EFA3E /* ZMLSwiftUIFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,14 +182,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13D81EBC257A4384004EFA3E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		370D61BC708E329F8CC7CF7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZMLSwiftUIFramework-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13D81EB1257A4384004EFA3E /* Sources */ = {
@@ -227,23 +218,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13D81EBA257A4384004EFA3E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				13D81EC4257A4384004EFA3E /* ZMLSwiftUIFrameworkTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		13D81EC1257A4384004EFA3E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13D81EB4257A4384004EFA3E /* ZMLSwiftUIFramework */;
-			targetProxy = 13D81EC0257A4384004EFA3E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		13D81EC7257A4384004EFA3E /* Debug */ = {
@@ -368,6 +343,7 @@
 		};
 		13D81ECA257A4384004EFA3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE5AC63D893A4F3D69B2F1B3 /* Pods-ZMLSwiftUIFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +370,7 @@
 		};
 		13D81ECB257A4384004EFA3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A06ACEC5F3D1B829ABC31C3C /* Pods-ZMLSwiftUIFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -417,44 +394,6 @@
 			};
 			name = Release;
 		};
-		13D81ECD257A4384004EFA3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L5N6T4GFYK;
-				INFOPLIST_FILE = ZMLSwiftUIFrameworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.karankarthic.ZMLSwiftUIFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		13D81ECE257A4384004EFA3E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L5N6T4GFYK;
-				INFOPLIST_FILE = ZMLSwiftUIFrameworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.karankarthic.ZMLSwiftUIFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,15 +411,6 @@
 			buildConfigurations = (
 				13D81ECA257A4384004EFA3E /* Debug */,
 				13D81ECB257A4384004EFA3E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		13D81ECC257A4384004EFA3E /* Build configuration list for PBXNativeTarget "ZMLSwiftUIFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				13D81ECD257A4384004EFA3E /* Debug */,
-				13D81ECE257A4384004EFA3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

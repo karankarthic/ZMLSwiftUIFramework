@@ -8,8 +8,4 @@ target 'ZMLSwiftUIFramework' do
   # Pods for ZMLSwiftUIFramework
 	pod 'ZMLKit', '0.0.23'
 
-  target 'ZMLSwiftUIFrameworkTests' do
-    # Pods for testing
-  end
-
 end
