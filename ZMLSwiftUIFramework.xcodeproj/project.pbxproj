@@ -11,6 +11,7 @@
 		133B7251257F7F140050DA6D /* PanelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B7250257F7F140050DA6D /* PanelContentView.swift */; };
 		13D65C1E25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65C1D25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework */; };
 		13D65C1F25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65C1D25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13D65C3525888C71008F7811 /* SupportingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65C3425888C71008F7811 /* SupportingViews.swift */; };
 		13D81EC6257A4384004EFA3E /* ZMLSwiftUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		133B7250257F7F140050DA6D /* PanelContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelContentView.swift; sourceTree = "<group>"; };
 		13D65C1D25822143008F7811 /* Pods_ZMLSwiftUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZMLSwiftUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D65C3425888C71008F7811 /* SupportingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingViews.swift; sourceTree = "<group>"; };
 		13D81EB5257A4384004EFA3E /* ZMLSwiftUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZMLSwiftUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMLSwiftUIFramework.h; sourceTree = "<group>"; };
 		13D81EB9257A4384004EFA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				13D81EB8257A4384004EFA3E /* ZMLSwiftUIFramework.h */,
 				133B7250257F7F140050DA6D /* PanelContentView.swift */,
+				13D65C3425888C71008F7811 /* SupportingViews.swift */,
 				13D81EB9257A4384004EFA3E /* Info.plist */,
 			);
 			path = ZMLSwiftUIFramework;
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				133B7251257F7F140050DA6D /* PanelContentView.swift in Sources */,
+				13D65C3525888C71008F7811 /* SupportingViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

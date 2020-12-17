@@ -7,64 +7,67 @@
 //
 
 import SwiftUI
+import ZMLKit
+
 
 public struct PanelContentView: View {
-    public var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-public struct Card : View {
     
-    let prompt: String
-    let id: UUID?
+    var pagePanel : PagePanelProperties
+    
     public var body: some View {
-        ZStack(alignment: .top) {
-            RoundedRectangle(cornerRadius: 5, style: .circular)
-                .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .shadow(radius: 0.5)
-            
-            VStack {
-                Text("843")
-                    .font(.largeTitle)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)))
-                Text(prompt)
-                    .font(.caption)
-                    .foregroundColor(.black)
+        NavigationView{
+            VStack{
+                ForEach(0 ..< pagePanel.panelRows.count) {
+                    PanelRowView(panelRow: pagePanel.panelRows[$0])
+                }
             }
-            .padding(20)
-            .multilineTextAlignment(.center)
         }
-        .padding()
-        .frame(width: UIScreen.screenWidth, height: 90)
-
-    }
-    
-}
-public struct CardView: View {
-    let cards: [Card]
-    
-    public var body: some View {
-        VStack(spacing:10) {
-            
-            ForEach(0 ..< cards.count) {
-                self.cards[$0]
-                Spacer()
-            }
-            
-        }
-        .padding()
-        .background(Color(#colorLiteral(red: 0.9703430533, green: 0.9705052972, blue: 0.9703217149, alpha: 1)))
+        .navigationBarTitle(pagePanel.identifier)
+        .navigationViewStyle(StackNavigationViewStyle())
         
     }
 }
 
-
-struct PanelContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        PanelContentView()
+public struct PanelRowView:View{
+    
+    var panelRow: PanelRowProperties
+    
+    public var body: some View{
+        HStack(spacing:0.0){
+            ForEach(0 ..< panelRow.panelColumns.count) {
+                PanelColunmView(panelColumn: panelRow.panelColumns[$0])
+                
+            }
+        }
     }
 }
+
+public struct PanelColunmView:View {
+    
+    var panelColumn: PanelColumnProperties
+    
+    public var body: some View{
+        
+        VStack(spacing: 0.0){
+            if let panelRows = panelColumn.panelRows {
+                ForEach(0 ..< panelRows.count) {
+                    PanelRowView(panelRow: panelRows[$0])
+                }
+            }
+            else if let component = panelColumn.component {
+                
+                switch component.type {
+                case .text:
+                   TextView(textable: component as? TextableProperties)
+                default:
+                    Text("entered default")
+                }
+            }
+        }
+    }
+}
+
+
 
 
 extension UIScreen{
