@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ZMLSwiftUIFramework"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "a frame use zml to give view."
   spec.homepage     = "https://github.com/karankarthic/ZMLSwiftUIFramework"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
