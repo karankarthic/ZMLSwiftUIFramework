@@ -12,19 +12,27 @@ import ZMLKit
 
 public struct PanelContentView: View {
     
-    var pagePanel : PagePanelProperties
+    public var pagePanel : PagePanelProperties
     
     public var body: some View {
-        NavigationView{
+        ZStack(alignment:.center){
+            RoundedRectangle(cornerRadius: 5, style: .circular)
+                .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .frame(width: (UIScreen.screenWidth - 20), height: 90)
+                .shadow(radius: 0.5)
+            
+            
             VStack{
                 ForEach(0 ..< pagePanel.panelRows.count) {
                     PanelRowView(panelRow: pagePanel.panelRows[$0])
+                    
                 }
             }
+            .padding(20)
+            .multilineTextAlignment(.center)
         }
-        .navigationBarTitle(pagePanel.identifier)
-        .navigationViewStyle(StackNavigationViewStyle())
-        
+//        .frame(width: (UIScreen.screenWidth - 20), height: )
+
     }
 }
 
@@ -33,13 +41,14 @@ public struct PanelRowView:View{
     var panelRow: PanelRowProperties
     
     public var body: some View{
-        HStack(spacing:0.0){
+        HStack{
             ForEach(0 ..< panelRow.panelColumns.count) {
                 PanelColunmView(panelColumn: panelRow.panelColumns[$0])
-                
             }
         }
+        
     }
+    
 }
 
 public struct PanelColunmView:View {
@@ -48,10 +57,12 @@ public struct PanelColunmView:View {
     
     public var body: some View{
         
-        VStack(spacing: 0.0){
+        VStack{
+            Spacer()
             if let panelRows = panelColumn.panelRows {
                 ForEach(0 ..< panelRows.count) {
                     PanelRowView(panelRow: panelRows[$0])
+
                 }
             }
             else if let component = panelColumn.component {
@@ -59,16 +70,17 @@ public struct PanelColunmView:View {
                 switch component.type {
                 case .text:
                    TextView(textable: component as? TextableProperties)
+               case .image:
+                    ImageView(imageProperties: component as! ImageProperties)
                 default:
                     Text("entered default")
                 }
             }
+            Spacer()
         }
+        .frame(height:30)
     }
 }
-
-
-
 
 extension UIScreen{
     static let screenWidth = UIScreen.main.bounds.size.width
