@@ -12,9 +12,9 @@ import ZMLKit
 
 public struct PanelContentView: View {
     
-     var pagePanel : PagePanelProperties
+    public var pagePanel : PagePanelProperties
     
-    init(pagePanel:PagePanelProperties) {
+    public init(pagePanel:PagePanelProperties) {
         self.pagePanel = pagePanel
     }
     
@@ -44,7 +44,7 @@ public struct PanelRowView:View{
     
    public var panelRow: PanelRowProperties
     
-    init(panelRow:PanelRowProperties) {
+    public init(panelRow:PanelRowProperties) {
         self.panelRow = panelRow
     }
     public var body: some View{
@@ -62,7 +62,7 @@ public struct PanelColunmView:View {
     
    public var panelColumn: PanelColumnProperties
     
-    init(panelColumn:PanelColumnProperties) {
+    public init(panelColumn:PanelColumnProperties) {
         self.panelColumn = panelColumn
     }
     
