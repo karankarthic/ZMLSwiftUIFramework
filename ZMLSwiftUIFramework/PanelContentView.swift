@@ -12,7 +12,11 @@ import ZMLKit
 
 public struct PanelContentView: View {
     
-    public var pagePanel : PagePanelProperties
+     var pagePanel : PagePanelProperties
+    
+    init(pagePanel:PagePanelProperties) {
+        self.pagePanel = pagePanel
+    }
     
     public var body: some View {
         ZStack(alignment:.center){
@@ -38,8 +42,11 @@ public struct PanelContentView: View {
 
 public struct PanelRowView:View{
     
-    var panelRow: PanelRowProperties
+   public var panelRow: PanelRowProperties
     
+    init(panelRow:PanelRowProperties) {
+        self.panelRow = panelRow
+    }
     public var body: some View{
         HStack{
             ForEach(0 ..< panelRow.panelColumns.count) {
@@ -53,7 +60,11 @@ public struct PanelRowView:View{
 
 public struct PanelColunmView:View {
     
-    var panelColumn: PanelColumnProperties
+   public var panelColumn: PanelColumnProperties
+    
+    init(panelColumn:PanelColumnProperties) {
+        self.panelColumn = panelColumn
+    }
     
     public var body: some View{
         
